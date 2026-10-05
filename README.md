@@ -2,7 +2,7 @@
 
 Eine Website für ein **fiktives** steirisches Wirtshaus. Gebaut als Beispielprojekt für mein Portfolio.
 
-**Live ansehen:** https://DEIN-USERNAME.github.io/demo-restaurant/
+**Live ansehen:** https://bugcraftag.github.io/REST-DEMO-WEB/
 
 ## Was die Seite kann
 
@@ -19,7 +19,7 @@ demo-restaurant/
 ├── index.html      Inhalt der Seite
 ├── css/style.css   Design (Farben oben in :root)
 ├── js/main.js      Öffnungszeiten, Mittagsmenü, Handy-Menü
-└── images/         eigene Fotos
+└── images/         Fotos (hero.jpg, stube.jpg, gericht-1..3.jpg)
 ```
 
 Fotos: [Unsplash](https://unsplash.com)
