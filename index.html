@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wirtshaus Rebenhof – Steirische Küche in Bad Radkersburg</title>
+  <meta name="description" content="Steirische Wirtshausküche, wechselndes Mittagsmenü und Kernöl aus der Region. Tisch reservieren unter +43 3476 000 000.">
+
+  <!-- Schriften (für echte Kunden-Websites: lokal hosten, wegen DSGVO) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Young+Serif&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <p class="demo-bar">Demo-Website: Das Wirtshaus Rebenhof ist erfunden. Gestaltet von David Tomoiaga.</p>
+
+  <header class="site-header">
+    <a class="logo" href="#top">Rebenhof</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menü</button>
+    <nav id="nav" class="nav">
+      <a href="#mittag">Mittagsmenü</a>
+      <a href="#karte">Speisekarte</a>
+      <a href="#haus">Über uns</a>
+      <a href="#besuch">Anfahrt &amp; Zeiten</a>
+      <a class="btn btn-small" href="tel:+433476000000">Tisch reservieren</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO: Foto, Name, Live-Öffnungsstatus -->
+    <section class="hero">
+      <img class="hero-img"
+           src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=80"
+           alt="Gastraum des Wirtshauses am Abend" onerror="this.hidden=true">
+      <div class="hero-content">
+        <h1>Wirtshaus<br>Rebenhof</h1>
+        <p class="hero-sub">Steirische Küche mit Kernöl, Wein und Gemüse aus dem Radkersburger Umland.</p>
+        <p class="status" id="status" aria-live="polite">Öffnungszeiten werden geladen</p>
+        <div class="hero-actions">
+          <a class="btn" href="tel:+433476000000">Tisch reservieren</a>
+          <a class="btn btn-ghost" href="#karte">Speisekarte ansehen</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MITTAGSMENÜ mit Tagen zum Anklicken -->
+    <section id="mittag" class="section lunch">
+      <div class="lunch-intro">
+        <h2>Mittagsmenü</h2>
+        <p>Dienstag bis Freitag, 11:30 bis 14:00 Uhr. Suppe und Hauptspeise für <strong>11,90&nbsp;€</strong>.</p>
+      </div>
+      <div class="lunch-days">
+        <div class="tabs" role="tablist" aria-label="Wochentag wählen">
+          <button role="tab" aria-selected="true"  data-day="2">Di</button>
+          <button role="tab" aria-selected="false" data-day="3">Mi</button>
+          <button role="tab" aria-selected="false" data-day="4">Do</button>
+          <button role="tab" aria-selected="false" data-day="5">Fr</button>
+        </div>
+        <div class="lunch-dish" role="tabpanel" id="lunch-dish">
+          <p class="soup">Kürbiscremesuppe mit Kernöl</p>
+          <p class="main">Schweinsbraten mit Semmelknödel und warmem Krautsalat</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEISEKARTE -->
+    <section id="karte" class="section menu">
+      <h2>Speisekarte</h2>
+      <div class="menu-grid">
+        <div class="menu-group">
+          <h3>Suppen &amp; Vorspeisen</h3>
+          <ul>
+            <li><span>Rindsuppe mit Frittaten</span><span>4,90 €</span></li>
+            <li><span>Kürbiscremesuppe mit Kernöl</span><span>5,90 €</span></li>
+            <li><span>Käferbohnensalat mit roter Zwiebel</span><span>9,50 €</span></li>
+            <li><span>Steirischer Backhendlsalat</span><span>14,90 €</span></li>
+          </ul>
+        </div>
+        <div class="menu-group">
+          <h3>Hauptspeisen</h3>
+          <ul>
+            <li><span>Wiener Schnitzel vom Kalb, Petersilerdäpfel</span><span>19,90 €</span></li>
+            <li><span>Steirisches Wurzelfleisch mit Kren</span><span>16,90 €</span></li>
+            <li><span>Schweinsbraten, Knödel, Sauerkraut</span><span>15,50 €</span></li>
+            <li><span>Spinatknödel mit Bergkäse <em>(vegetarisch)</em></span><span>12,50 €</span></li>
+            <li><span>Gebackene Champignons, Sauce Tartare <em>(vegetarisch)</em></span><span>12,90 €</span></li>
+          </ul>
+        </div>
+        <div class="menu-group">
+          <h3>Süßes</h3>
+          <ul>
+            <li><span>Apfelstrudel mit Schlagobers</span><span>5,50 €</span></li>
+            <li><span>Kürbiskernparfait</span><span>6,90 €</span></li>
+            <li><span>Kaiserschmarrn mit Zwetschkenröster</span><span>9,90 €</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="menu-note">Allergeninformationen erhalten Sie bei unserem Servicepersonal.</p>
+    </section>
+
+    <!-- ÜBER UNS -->
+    <section id="haus" class="section about">
+      <div class="about-text">
+        <h2>Seit drei Generationen am Herd</h2>
+        <p>Der Rebenhof ist ein Familienbetrieb. Wir kochen, was in der Gegend wächst: Kürbis und Käferbohnen vom Nachbarn, Wein von den Hängen gleich hinter dem Haus, Fleisch vom Bauern aus dem Ort.</p>
+        <p>Im Sommer sitzen Sie im Gastgarten unter der alten Linde, im Winter in der holzgetäfelten Stube.</p>
+      </div>
+      <figure class="about-img">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80"
+             alt="Sitzplätze im Gastraum" loading="lazy" onerror="this.hidden=true">
+      </figure>
+    </section>
+
+    <!-- GALERIE -->
+    <section class="gallery" aria-label="Bilder aus dem Wirtshaus">
+      <figure class="g-wide">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=80"
+             alt="Angerichteter Teller" loading="lazy" onerror="this.hidden=true">
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80"
+             alt="Gericht aus der Küche" loading="lazy" onerror="this.hidden=true">
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80"
+             alt="Gedeckte Tische im Restaurant" loading="lazy" onerror="this.hidden=true">
+      </figure>
+    </section>
+
+    <!-- BESUCH: Zeiten + Adresse -->
+    <section id="besuch" class="section visit">
+      <div>
+        <h2>Öffnungszeiten</h2>
+        <table class="hours" id="hours">
+          <tr data-day="1"><th>Montag</th><td>Ruhetag</td></tr>
+          <tr data-day="2"><th>Dienstag</th><td>11:00 – 22:00</td></tr>
+          <tr data-day="3"><th>Mittwoch</th><td>11:00 – 22:00</td></tr>
+          <tr data-day="4"><th>Donnerstag</th><td>11:00 – 22:00</td></tr>
+          <tr data-day="5"><th>Freitag</th><td>11:00 – 22:00</td></tr>
+          <tr data-day="6"><th>Samstag</th><td>11:00 – 22:00</td></tr>
+          <tr data-day="0"><th>Sonntag</th><td>11:00 – 15:00</td></tr>
+        </table>
+        <p class="small">Küche bis eine Stunde vor Schluss.</p>
+      </div>
+      <div>
+        <h2>So finden Sie uns</h2>
+        <address>
+          Wirtshaus Rebenhof<br>
+          Musterstraße 1<br>
+          8490 Bad Radkersburg
+        </address>
+        <p><a href="tel:+433476000000">+43 3476 000 000</a><br>
+           <a href="mailto:tisch@rebenhof.example">tisch@rebenhof.example</a></p>
+        <p>Parkplätze direkt vor dem Haus. Der Gastgarten ist barrierefrei erreichbar.</p>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Bad+Radkersburg" target="_blank" rel="noopener">Route planen</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Wirtshaus Rebenhof</p>
+    <p><a href="#">Impressum</a> <a href="#">Datenschutz</a></p>
+    <p class="small">Fotos: Unsplash</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
